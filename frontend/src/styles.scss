@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.red {
+    color: #eb1f1f;
+}
+
+.v {
+    &-top {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-middle {
+        display: flex;
+        align-items: center;
+    }
+
+    &-bottom {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+
+.c {
+
+    &-start {
+        display: flex;
+        justify-content: start;
+    }
+
+    &-middle {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-end {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+
+// MARGIN LEFT
+
+.ml-5 {
+    margin-left: 5px;
+}
