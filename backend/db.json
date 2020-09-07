@@ -1,10 +1,18 @@
 {
-    "pessoas": [
-        {
-            "nome": "Soledad"
+    "products": [{
+            "id": "1",
+            "name": "Caneta BIC",
+            "price": 2.00
         },
         {
-            "nome": "General"
+            "id": "2",
+            "name": "Lapis",
+            "price": 1.00
+        },
+        {
+            "id": "3",
+            "name": "Caderno",
+            "price": 9.99
         }
     ]
 }

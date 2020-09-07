@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-product-crud",
@@ -6,11 +7,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./product-crud.component.scss"],
 })
 export class ProductCrudComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
   navigateToProduct(): void {
+    this.router.navigate(["/products/create"]);
     console.log("navigateToProduct");
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ProductService } from "../product.service";
 
 @Component({
   selector: "app-product-create",
@@ -6,13 +7,16 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./product-create.component.scss"],
 })
 export class ProductCreateComponent implements OnInit {
-  atributoLegal = "Estpu vendo coisas novas";
-
-  constructor() {}
+  constructor(private productService: ProductService) {}
 
   ngOnInit(): void {}
 
-  fazeralgo() {
-    console.log("Fazendo algo novo.");
+  createProduct(): void {
+    this.productService.showMessage("Produto criado...");
+  }
+
+  cancel(): void {
+    this.productService.showMessage("Operação cancelada...");
+    this.productService.cancel();
   }
 }
