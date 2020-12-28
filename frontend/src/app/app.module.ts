@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
@@ -14,6 +15,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { FooterComponent } from "./components/template/footer/footer.component";
 import { HeaderComponent } from "./components/template/header/header.component";
 import { NavComponent } from "./components/template/nav/nav.component";
@@ -34,8 +36,10 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
     RedDirective,
     ForDirective,
     ProductCreateComponent,
+    ProductReadComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

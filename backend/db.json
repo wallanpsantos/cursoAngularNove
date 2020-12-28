@@ -2,23 +2,8 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta BIC",
-      "price": 2
-    },
-    {
-      "id": 2,
-      "name": "Lapis",
-      "price": 1
-    },
-    {
-      "id": 3,
-      "name": "Caderno",
-      "price": 9.99
-    },
-    {
-      "name": "Cadeira",
-      "price": "100.00",
-      "id": 4
+      "name": "Mesa",
+      "price": "1200,29"
     }
   ]
 }

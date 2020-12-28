@@ -1,0 +1,9 @@
+<!-- <button mat-raised-button color="accent">Ler Produto</button> -->
+
+<ul>
+    <li *ngFor="let product of products">
+        ID: {{ product.id }},
+        Nome: {{ product.name }},
+        Preço: R$ {{ product.price }}
+    </li>
+</ul>
