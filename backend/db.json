@@ -1,29 +1,23 @@
 {
-  "products": [
-    {
+  "products": [{
       "id": 1,
       "name": "Mesa",
-      "price": "1200,29"
+      "price": 1200.29
     },
     {
       "id": 2,
-      "name": null,
-      "price": null
+      "name": "Cadeira",
+      "price": 899.30
     },
     {
       "id": 3,
-      "name": "Mesa",
-      "price": "899,30"
+      "name": "Mouse",
+      "price": 350.23
     },
     {
       "id": 4,
-      "name": "Canetas",
-      "price": "1000"
-    },
-    {
-      "id": 5,
-      "name": "Mouse",
-      "price": "350,23"
+      "name": "Teclado",
+      "price": 150.00
     }
   ]
 }
