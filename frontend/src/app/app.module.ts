@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
-import { NgModule } from "@angular/core";
+import { NgModule, LOCALE_ID } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
@@ -24,6 +24,11 @@ import { ForDirective } from "./directives/ForDirective";
 import { RedDirective } from "./directives/red.directive";
 import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
+
+import localePt from "@angular/common/locales/pt";
+import { registerLocaleData } from "@angular/common";
+
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -55,7 +60,12 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
     MatInputModule,
     MatFormFieldModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID,
+     useValue: 'pt-BRL'
+    }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
