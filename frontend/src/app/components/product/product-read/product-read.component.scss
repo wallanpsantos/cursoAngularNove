@@ -5,3 +5,19 @@ button {
 table {
     width: 100%;
 }
+
+a {
+    margin-right: 1rem;
+
+    &:last-of-type{
+        margin-right: 0;
+    }
+
+    &.edit {
+        color: #18ff00;
+    }
+
+    &.delete {
+        color: #ff0400;
+    }
+}
