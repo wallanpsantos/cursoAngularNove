@@ -18,13 +18,21 @@ export class ProductUpdateComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get("id ");
+    const id = this.route.snapshot.paramMap.get("id");
     this.productService.readById(id).subscribe((product) => {
       this.product = product;
     });
   }
 
-  updateProduct(): void {}
+  updateProduct(): void {
+    const id = this.route.snapshot.paramMap.get("id");
+    this.productService.update(this.product).subscribe((product) => {
+      this.productService.showMessage(
+        'Produto "' + product.name + '" Atualizado com Sucesso'
+      );
+      this.router.navigate(["/products"]);
+    });
+  }
 
   cancel(): void {
     this.router.navigate(["/products"]);

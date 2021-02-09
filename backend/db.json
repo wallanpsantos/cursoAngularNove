@@ -2,28 +2,23 @@
   "products": [
     {
       "id": 1,
-      "name": "Mesa",
-      "price": 1200.29
+      "name": "Celular",
+      "price": "899.99"
     },
     {
       "id": 2,
-      "name": "Cadeira",
-      "price": 899.3
+      "name": "Computador",
+      "price": "3499.00"
     },
     {
       "id": 3,
-      "name": "Mouse",
-      "price": 350.23
+      "name": "Tela",
+      "price": "750.49"
     },
     {
       "id": 4,
-      "name": "Teclado",
-      "price": 150
-    },
-    {
-      "id": 5,
-      "name": "Celular",
-      "price": "1500"
+      "name": "Notebook",
+      "price": "2500.79"
     }
   ]
 }
