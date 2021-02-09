@@ -3,7 +3,6 @@ import { Injectable } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 import { Observable } from "rxjs/internal/Observable";
-
 import { ProductModel } from "./product.model";
 
 @Injectable({
@@ -46,5 +45,10 @@ export class ProductService {
   update(product: ProductModel): Observable<ProductModel> {
     const url = `${this.baseUrl}/${product.id}`;
     return this.http.put<ProductModel>(url, product);
+  }
+
+  delete(id: string): Observable<ProductModel> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<ProductModel>(url);
   }
 }
