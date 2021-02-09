@@ -18,6 +18,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { FooterComponent } from "./components/template/footer/footer.component";
 import { HeaderComponent } from "./components/template/header/header.component";
 import { NavComponent } from "./components/template/nav/nav.component";
@@ -25,7 +26,6 @@ import { ForDirective } from "./directives/ForDirective";
 import { RedDirective } from "./directives/red.directive";
 import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
-import { ProductUpdateComponent } from './src/app/components/product/product-update/product-update.component';
 
 registerLocaleData(localePt);
 

@@ -1,5 +1,6 @@
 {
-  "products": [{
+  "products": [
+    {
       "id": 1,
       "name": "Mesa",
       "price": 1200.29
@@ -7,7 +8,7 @@
     {
       "id": 2,
       "name": "Cadeira",
-      "price": 899.30
+      "price": 899.3
     },
     {
       "id": 3,
@@ -17,7 +18,12 @@
     {
       "id": 4,
       "name": "Teclado",
-      "price": 150.00
+      "price": 150
+    },
+    {
+      "id": 5,
+      "name": "Celular",
+      "price": "1500"
     }
   ]
 }
