@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-buttons {
+    :first-child {
+        margin-right: 1rem;
+    }
+}

@@ -4,21 +4,6 @@
       "id": 1,
       "name": "Celular",
       "price": "899.99"
-    },
-    {
-      "id": 2,
-      "name": "Computador",
-      "price": "3499.00"
-    },
-    {
-      "id": 3,
-      "name": "Tela",
-      "price": "750.49"
-    },
-    {
-      "id": 4,
-      "name": "Notebook",
-      "price": "2500.79"
     }
   ]
 }
