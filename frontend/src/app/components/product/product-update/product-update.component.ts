@@ -28,7 +28,7 @@ export class ProductUpdateComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get("id");
     this.productService.update(this.product).subscribe((product) => {
       this.productService.showMessage(
-        'Produto "' + product.name + '" Atualizado com Sucesso'
+        'Produto "' + product.name + '" Atualizado com Sucesso', false
       );
       this.router.navigate(["/products"]);
     });

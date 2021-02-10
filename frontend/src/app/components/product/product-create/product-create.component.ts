@@ -9,12 +9,11 @@ import { ProductService } from "../product.service";
   styleUrls: ["./product-create.component.scss"],
 })
 export class ProductCreateComponent implements OnInit {
-
   product: ProductModel = {
     id: null,
     name: null,
-    price: null    
-  }
+    price: null,
+  };
 
   constructor(private productService: ProductService, private router: Router) {}
 
@@ -22,15 +21,15 @@ export class ProductCreateComponent implements OnInit {
 
   createProduct(): void {
     this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessage("Produto criado com sucesso");
+      this.productService.showMessage("Produto criado com sucesso", false);
       this.router.navigate(["/products"]);
-    })
+    });
 
-    this.productService.showMessage("Produto criado...")
+    this.productService.showMessage("Produto criado...", false);
   }
 
   cancel(): void {
-    this.productService.showMessage("Operação cancelada...")
-    this.productService.cancel()
+    this.productService.showMessage("Operação cancelada...", false);
+    this.productService.cancel();
   }
 }

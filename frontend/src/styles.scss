@@ -32,9 +32,7 @@ a {
     }
 }
 
-
 .c {
-
     &-start {
         display: flex;
         justify-content: start;
@@ -51,9 +49,20 @@ a {
     }
 }
 
-
 // MARGIN LEFT
 
 .ml-5 {
     margin-left: 5px;
+}
+
+// Color message
+
+.msg-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.msg-error {
+    background-color: #fa0606;
+    color: #fff;
 }
